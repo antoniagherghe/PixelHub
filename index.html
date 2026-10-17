@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PixelHub</title>
+        <link rel="icon" type="image/x-icon" href="logoProiect.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="description" content="This page is going to convince you to spend your free time and money in our favor :)">
+        <meta name="author" content="Antonia Gherghe">
+        <meta name="keywords" content="games, fun, graphics, cafe, work, interactive">
+        <link rel="stylesheet" href="proiect-style.css" type="text/css">
+        <script type="text/javascript" src="proiect.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">PixelHub<span> Café</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Acasă</a></li>
+                    <li><a href="#about">Despre noi</a></li>
+                    <li class="dropdown">
+                        <a href="#servicii">Servicii</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#servicii">Gaming Zone</a></li>
+                            <li><a href="#servicii">Cafenea & Snacks</a></li>
+                            <li><a href="#servicii">Evenimente & Turnee</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#gear">Gear</a></li>
+                    <li><a href="#pret">Prețuri</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home">
+                <h1>Welcome to <span>PixelHub</span> Gaming Café</h1>
+                <p>Locul perfect pentru a da viață pasiunii pentru gaming!</p>
+                <button>Rezervă un loc</button>
+            </section>
+
+            <section id="about">
+                <h2>Despre noi</h2>
+                <p>PixelHub este un spațiu dedicat gamerilor, cu PC-uri high-end, console, și o atmosferă perfectă pentru distracție.</p>
+            </section>
+
+            <section id="servicii">
+                <h2>Serviciile oferite</h2>
+                <div class="s">
+                    <div class="s1">Gaming Zone</div>
+                    <div class="s1">Cafenea & Snacks</div>
+                    <div class="s1">Evenimente & Turnee</div>
+                </div>
+            </section>
+
+            <section id="gear">
+                <h2>Gear-ul nostru</h2>
+                <p class="gear-intro">Cele mai noi echipamente pentru o experiență de vis!</p>
+
+                <div class="gear-tot">
+                    <div class="gear-categorie">
+                        <figure>
+                            <img src="img1.jpg" alt="PC-uri High-End" width="35%">
+                        </figure>
+                        <h3>PC-uri High-End</h3>
+                        <p>RTX 4070 / i7 13700K / 32GB RAM / Monitor 240Hz</p>
+                    </div>
+
+                    <div class="gear-categorie">
+                        <figure>
+                            <img src="img2.jpg" alt="Periferice RGB" width="35%">
+                        </figure>
+                        <h3>Periferice RGB</h3>
+                        <p>Mouse & tastaturi Razer / Logitech G Pro / SteelSeries</p>
+                    </div>
+
+                    <div class="gear-categorie">
+                        <figure>
+                            <img src="img3.jpg" alt="Console" width="35%">
+                        </figure>
+                        <h3>Consoles</h3>
+                        <p>PS5, Xbox Series X, TV 4K HDR 120Hz</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pret">
+                <h2>Prețuri</h2>
+                <div class="pret-tot">
+                    <div class="pret-categorie">
+                        <h3>Joc pe PC</h3>
+                        <ul>
+                        <li>1 oră - <span>10 lei</span></li>
+                        <li>3 ore - <span>25 lei</span></li>
+                        <li>Toată ziua - <span>70 lei</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="pret-categorie">
+                        <h3>Console Zone</h3>
+                        <ul>
+                        <li>1 oră - <span>12 lei</span></li>
+                        <li>3 ore - <span>30 lei</span></li>
+                        <li>Toată ziua - <span>80 lei</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="pret-categorie">
+                        <h3>Abonamente</h3>
+                        <ul>
+                        <li>10 ore - <span>90 lei</span></li>
+                        <li>30 ore - <span>250 lei</span></li>
+                        <li>VIP Pass (nelimitat) - <span>400 lei/lună</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="zona-login">
+                <h2 class="membri">Membri PixelHub</h2>
+    
+                <div id="container-login">
+                    <p>Introdu un username (min. 3 caractere) pentru a vedea ofertele VIP:</p>
+                    <div style="margin-top: 20px;">
+                        <input type="text" id="user-input" placeholder="Username..." style="padding: 10px; border-radius: 5px; border: 1px solid #0ff; background: #1a1a25; color: #fff;">
+                        <button id="btn-login">Login</button>
+                    </div>
+                </div>
+
+                <div id="user-welcome">
+                    <p>Salut, <span id="user-display"></span>!</p>
+                    <p id="session-info"></p>
+                    <button id="btn-logout">Logout</button>
+                </div>
+            </section>
+
+            <section id="ajax-section">
+                <h2 class="parteneri-even">Parteneri & Evenimente</h2>
+                <div id="ajax-content"></div>
+            </section>
+
+            <section>
+                <div id="canvas-container" style="text-align: center; margin-top: 20px;">
+                    <h4>Grafică generată prin Canvas:</h4>
+                    <canvas id="canva" width="100" height="100"></canvas>
+                </div>
+            </section>
+        </main>
+    </body>
+
+    <footer id="contact">
+        <p>📍 Str. Internet 33, București | ☎️ 0700 123 456</p>
+    </footer>
+</html>
